@@ -1,0 +1,19 @@
+package com.mycompany.conference.repository;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import com.mycompany.conference.model.User;
+
+public class UserRepositoryImpl implements UserRepository  {
+	
+	@PersistenceContext
+	private EntityManager entitymanager;
+	
+	@Override
+	public User save(User user) {
+		 entitymanager.persist(user);
+		 return user;
+	}
+
+}

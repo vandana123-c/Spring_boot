@@ -1,0 +1,19 @@
+package com.mycompany.conference.service;
+
+import org.springframework.stereotype.Service;
+
+import com.mycompany.conference.model.Course;
+@Service
+public class CourseServiceImpl implements CourseService {
+	
+	@Autowired
+	courseRepositoryImpl service;
+	
+	@Override
+	public Course save(Course course) {
+		
+		
+		return course;
+	}
+
+}

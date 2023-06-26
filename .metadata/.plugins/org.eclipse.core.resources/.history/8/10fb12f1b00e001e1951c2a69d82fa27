@@ -1,0 +1,12 @@
+package com.mycompany.conference.service;
+
+import com.mycompany.conference.model.Course;
+
+public class CourseServiceImpl {
+	
+	public Course save(Course course) {
+		
+		return course;
+	}
+
+}

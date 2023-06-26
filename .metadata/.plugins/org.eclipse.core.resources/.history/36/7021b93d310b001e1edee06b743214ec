@@ -1,0 +1,45 @@
+package com.mycomapny.service;
+import java.util.List;
+
+import com.mycompany.model.Speaker;
+import com.mycompany.repository.*;
+
+public class SpeakerServiceImpl implements SpreakerService {
+	
+	//private SpeakerRepository rep=new HibernateSpeakerRepositoryImp();
+
+	private SpeakerRepository rep;
+	@Override
+	public List<Speaker> findAll() {
+		return rep.findAll();
+		 
+	}
+	
+	
+	public  SpeakerServiceImpl(SpeakerRepository rep) {
+		System.out.println("SpeakerServiceImpl repository args constructor");
+		this.rep = rep;
+	}
+
+
+	public SpeakerServiceImpl() {
+		System.out.println("SpeakerServiceImpl no args constructor");
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public SpeakerRepository getRep() {
+		return rep;
+	}
+	
+	public void setRep(SpeakerRepository rep) {
+		System.out.println("SpeakerServiceImpl setter");
+		this.rep = rep;
+	}
+	
+	
+	
+		
+	
+
+}

@@ -1,0 +1,17 @@
+package com.mycompany.conference.service;
+
+import org.springframework.stereotype.Service;
+
+import com.mycompany.conference.model.Registration;
+
+@Service
+public class RegisterserviceImpl implements RegisterService {
+	
+	RegistrationRepositoryImpl service;
+	
+	@Override
+	public Registration save(Registration register) {
+		return null;
+	}
+
+}

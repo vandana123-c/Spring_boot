@@ -1,0 +1,46 @@
+package com.mycompany.conference.service;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mycompany.conference.model.Registration;
+import com.mycompany.conference.model.RegistrationReport;
+import com.mycompany.conference.repository.RegistrationRepositoryImpl;
+import com.mycompany.conference.repository.courseRepositoryImpl;
+import com.mycompany.conference.model.Course;
+
+@Service
+public class RegisterserviceImpl implements RegisterService {
+	
+	@Autowired
+	RegistrationRepositoryImpl repo;
+	
+	@Autowired
+	courseRepositoryImpl  courserepo;
+	
+	@Override
+	@Transactional
+	public Registration save(Registration register) {
+		Registration registration=	 repo.save(register);
+		Course course=new Course();
+		
+		course.setDescription("the course ids good");
+		course.setName("ECE");
+		course.setRegistration(registration);
+		
+		courserepo.save(course);
+		
+		return registration;
+		 
+	}
+	@Override
+	public List<RegistrationReport> findReports() {
+		return repo.findReports;;
+		
+	}
+
+}

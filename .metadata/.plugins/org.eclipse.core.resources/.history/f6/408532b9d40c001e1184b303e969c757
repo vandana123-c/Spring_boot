@@ -1,0 +1,9 @@
+package com.mycompany.service;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.mycomapny.model.Friend;
+
+public interface friendservice  extends CrudRepository<Friend,Integer>{
+
+}

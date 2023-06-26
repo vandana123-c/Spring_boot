@@ -1,0 +1,10 @@
+package com.example.demo.controller;
+
+public class MessageController {
+	
+	public Message getmessage() {
+		return new message("hello World");
+		|
+	}
+
+}

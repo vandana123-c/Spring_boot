@@ -1,0 +1,12 @@
+package com.mycompany.conference.service;
+
+public class UserServiceImpl {
+	
+	public user save() {
+		return null;
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.mycompany.conference.service;
+
+import com.mycompany.conference.model.User;
+@service
+public class UserServiceImpl implements UserService {
+	
+	@Override
+	public User save() {
+		return null;
+		
+	}
+	
+	
+
+}

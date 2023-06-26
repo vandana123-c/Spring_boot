@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Jun 21 01:07:47 PDT 2023
+org.eclipse.jst.jee.server\:Message-Web=C\:\\Tomcat\\apache-tomcat-9.0.76\\wtpwebapps\\Message-Web
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\user\\.m2\\repository\\org\\springframework\\spring-web\\5.3.23\\spring-web-5.3.23.jar=C\:\\Tomcat\\apache-tomcat-9.0.76\\wtpwebapps\\Message-Web\\WEB-INF\\lib\\spring-web-5.3.23.jar

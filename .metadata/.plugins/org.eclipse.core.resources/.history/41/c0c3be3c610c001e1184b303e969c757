@@ -1,0 +1,5 @@
+package om.message.demo.model;
+
+public class Message {
+
+}

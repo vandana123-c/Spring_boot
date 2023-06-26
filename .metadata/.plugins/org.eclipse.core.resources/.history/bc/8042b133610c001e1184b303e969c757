@@ -1,0 +1,12 @@
+package com.message.demo.controller;
+
+import om.message.demo.model.Message;
+@controller
+public class messagecontroller {
+	
+	@GetMapping("/message")
+	public Message getmessage() {
+		return new Message("Hello");
+	}
+
+}

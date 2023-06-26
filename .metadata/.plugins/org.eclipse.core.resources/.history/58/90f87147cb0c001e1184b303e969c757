@@ -1,0 +1,15 @@
+package com.mycomapny.model;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+public class Friend {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	public int id;
+public String firstname;
+public String lastname;
+
+}

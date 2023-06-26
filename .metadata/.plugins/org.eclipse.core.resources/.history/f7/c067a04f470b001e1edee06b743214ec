@@ -1,0 +1,7 @@
+package com.mycompany;
+
+import org.springframework.beans.factory.FactoryBean;
+
+public class CalenderFactory implements FactoryBean<T> {
+
+}

@@ -1,0 +1,12 @@
+package com.mycompany.conference.repository;
+
+import com.mycompany.conference.model.Registration;
+
+public class RegistrationRepositoryImpl implements Registerrepository {
+	
+	@Override
+	public Registration save(Registration register) {
+		return register;
+	}
+
+}

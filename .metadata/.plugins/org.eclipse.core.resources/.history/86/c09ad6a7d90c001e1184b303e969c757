@@ -1,0 +1,10 @@
+package com.mycompany.model;
+
+public class friend {
+	
+	public String firstname;
+	public String lastname;
+	public int age;
+	public String marriage;
+
+}

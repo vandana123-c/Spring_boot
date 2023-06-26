@@ -1,0 +1,11 @@
+package com.mycompany.controller;
+
+import com.mycomapny.model.Friend;
+
+public class friendcontroller {
+	
+	public Friend create(@requestbody Friend friend) {
+		
+	}
+
+}

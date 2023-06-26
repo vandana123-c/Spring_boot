@@ -1,0 +1,20 @@
+package com.mycompany.conference.repository;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.stereotype.Repository;
+
+import com.mycompany.conference.model.Registration;
+
+@Repository
+public class RegistrationRepositoryImpl implements Registerrepository {
+	
+	private EntityManager entitymanager;
+	
+	@Override
+	public void save(Registration register) {
+		entitymanager.persist(register);
+		
+	}
+
+}

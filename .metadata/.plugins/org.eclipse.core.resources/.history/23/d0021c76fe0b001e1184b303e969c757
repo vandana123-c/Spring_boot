@@ -1,0 +1,10 @@
+package com.example.demo.controller;
+
+public class RegistrationController {
+	
+	@getmapping("registration")
+	public String register() {
+		return "registration";
+	}
+
+}

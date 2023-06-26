@@ -1,0 +1,7 @@
+package com.mycomapny.service;
+
+public interface SpreakerService {
+	
+	public List<Speaker> findAll():
+
+}

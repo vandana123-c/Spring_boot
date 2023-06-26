@@ -1,0 +1,14 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.demo.model.Message;
+@restcontroller
+public class MessageController {
+	
+	@GetMapping("/message")
+	public Message getmessage() {
+		return new Message("hello postman");
+	}
+
+}

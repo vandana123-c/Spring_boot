@@ -1,0 +1,13 @@
+package com.example.demo;
+
+
+import org.springframework.web.*;
+
+public class ServletInitializer implements WebApplicationInitializer {
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(DemoApplication.class);
+	}
+
+}

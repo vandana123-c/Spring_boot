@@ -1,0 +1,12 @@
+package com.example.demo.controller;
+
+import com.example.demo.model.Message;
+
+public class MessageController {
+	
+	public Message getmessage() {
+		return new Message();
+		|
+	}
+
+}

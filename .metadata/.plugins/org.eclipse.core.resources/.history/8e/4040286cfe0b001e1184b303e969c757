@@ -1,0 +1,9 @@
+package com.example.demo.controller;
+
+public class RegistrationController {
+	
+	public String register() {
+		return "registration";
+	}
+
+}

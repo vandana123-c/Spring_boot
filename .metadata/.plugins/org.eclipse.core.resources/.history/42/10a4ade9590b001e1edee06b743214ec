@@ -1,0 +1,45 @@
+package com.mycompany.repository;
+
+import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Repository;
+
+import com.mycompany.CalenderFactory;
+import com.mycompany.model.Speaker;
+
+@Repository("SpeakerRepository")
+
+public class HibernateSpeakerRepositoryImp implements SpeakerRepository {
+	
+    @Autowired
+	private CalenderFactory cal;
+     
+     @Value("#{T(java.lang.Math).random()*100 }" )
+     private double seedNum;
+	
+	public HibernateSpeakerRepositoryImp() {
+		super();
+		
+	}
+
+	@Override@Profile("dev")
+	
+	public List<Speaker> findAll() throws Exception {
+		
+		List<Speaker> speakers=new ArrayList<Speaker>();
+		Speaker speaker=new Speaker();
+		speaker.setFirstname("vandana");
+		speaker.setLastname("chilkuru");
+		speaker.setSeednum(seedNum);
+		
+		speakers.add(speaker);
+		
+		System.out.println("call"+cal.getObject().getTime());
+		
+		return speakers;
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.mycompany.controller;
+
+import java.util.Iterator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.mycomapny.model.Friend;
+import com.mycompany.service.friendservice;
+
+public class friendcontroller {
+	@Autowired
+	friendservice service;
+		
+		@PostMapping("/friend")
+	public Friend create(@RequestBody Friend friend) {
+		return service.save(friend);
+	}
+		public Iterator<Friend> getfriend(){
+			return service.findall();
+			
+			
+		}
+
+	
+

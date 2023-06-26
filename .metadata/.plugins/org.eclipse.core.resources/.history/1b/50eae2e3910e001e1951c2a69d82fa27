@@ -1,0 +1,12 @@
+package com.mycompany.conference.service;
+
+import com.mycompany.conference.model.Registration;
+
+public class Registerservice {
+	
+	
+	public Registration save(Registration register) {
+		return null;
+	}
+
+}

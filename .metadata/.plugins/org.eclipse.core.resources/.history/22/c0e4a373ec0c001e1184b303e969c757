@@ -1,0 +1,87 @@
+package com.mycompany.model;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.springframework.boot.autoconfigure.cache.CacheType;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+//import jakarta.persistence.CascadeType;
+//import jakarta.persistence.Embeddable;
+//import jakarta.persistence.Embedded;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.GeneratedValue;
+//import jakarta.persistence.GenerationType;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.OneToMany;
+
+@Entity
+public class Friend {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	public int id;
+	@JsonProperty("first_name")
+	public String firstname;
+	@JsonProperty("last_name")
+	public String lastname;
+	@JsonIgnore
+	public int age;
+	@JsonIgnore
+	public boolean marriage;
+	
+	//@Embedded
+	//public Address address;
+	//@OneToMany(cascade=CascadeType.ALL)
+	List<Address> Address;
+	
+	public List<Address> getAddress() {
+		return Address;
+	}
+	public void setAddress(List<Address> address) {
+		Address = address;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+//	public Address getAddress() {
+//		return address;
+//	}
+//	public void setAddress(Address address) {
+//		this.address = address;
+//	}
+	public void setMarriage(boolean marriage) {
+		this.marriage = marriage;
+	}
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+
+}

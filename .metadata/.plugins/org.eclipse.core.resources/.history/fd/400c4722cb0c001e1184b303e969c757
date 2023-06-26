@@ -1,0 +1,5 @@
+package com.mycomapny.model;
+
+public class Friend {
+
+}

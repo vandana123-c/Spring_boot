@@ -1,0 +1,11 @@
+package com.mycompany.conference.repository;
+
+import com.mycompany.conference.model.User;
+
+public class UserRepositoryImpl  {
+	
+	public User save(User user) {
+		return user;
+	}
+
+}

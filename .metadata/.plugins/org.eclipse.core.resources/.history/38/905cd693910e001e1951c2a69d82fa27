@@ -1,0 +1,9 @@
+package com.mycompany.conference.repository;
+
+public class RegistrationRepositoryImpl {
+	
+	public Registration save(Registration register) {
+		return register;
+	}
+
+}

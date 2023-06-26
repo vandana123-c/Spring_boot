@@ -1,0 +1,10 @@
+package com.mycompany.conference.service;
+
+public class Registerservice {
+	
+	
+	public Registration save(Registration register) {
+		return null;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	
+	public User Getuser(@RequestParam (value="firstname", defaultValue="vandana") String firstname) {
+		
+		
+		return user;
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.mycomapny.service;
+import com.mycompany.repository.*;
+
+public class SpeakerServiceImpl implements SpreakerService {
+	
+	private SpeakerRepository rep=new HibernateSpeakerRepositoryImp();
+		
+	
+
+}

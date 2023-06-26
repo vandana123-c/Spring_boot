@@ -1,0 +1,16 @@
+package com.message.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import om.message.demo.model.Message;
+
+@Controller
+public class messagecontroller {
+	
+	@GetMapping("/display")
+	public Message getmessage() {
+		return new Message("Hello");
+	}
+
+}

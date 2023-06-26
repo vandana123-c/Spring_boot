@@ -1,0 +1,10 @@
+package com.mycompany.conference.service;
+
+public class CourseService {
+	
+	public Course save(Course course) {
+		
+		return course;
+	}
+
+}

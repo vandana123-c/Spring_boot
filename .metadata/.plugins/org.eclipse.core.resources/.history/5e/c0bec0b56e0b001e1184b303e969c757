@@ -1,0 +1,12 @@
+package com.example.demo.controlller;
+
+import java.util.Map;
+
+public class Greetingcontroller {
+	
+	public String greeting(Map<String,Object> model){
+		return null;
+		
+	}
+
+}

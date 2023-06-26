@@ -1,0 +1,5 @@
+package com.mycomapny.service;
+
+public interface SpreakerService {
+
+}

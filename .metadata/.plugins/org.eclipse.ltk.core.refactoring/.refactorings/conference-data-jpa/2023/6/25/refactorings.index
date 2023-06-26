@@ -1,0 +1,7 @@
+1687167307272	Extract interface 'UserService'
+1687167878088	Extract interface 'UserRepository'
+1687170005090	Move source folder
+1687172886969	Extract interface 'Registerrepository'
+1687173083118	Extract interface 'RegisterService'
+1687186151047	Extract interface 'CourseRepository'
+1687186377540	Extract interface 'CourseService'

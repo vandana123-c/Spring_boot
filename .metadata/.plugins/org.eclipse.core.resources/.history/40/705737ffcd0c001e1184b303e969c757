@@ -1,0 +1,14 @@
+package com.mycompany.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.mycomapny.model.Friend;
+
+public class friendcontroller {
+	@PostMapping("/friend")
+	public Friend create(@RequestBody Friend friend) {
+		return new Friend;
+	}
+
+}

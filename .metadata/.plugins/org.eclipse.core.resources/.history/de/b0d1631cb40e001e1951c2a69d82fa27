@@ -1,0 +1,9 @@
+package com.mycompany.conference.repository;
+
+import com.mycompany.conference.model.Registration;
+
+public interface Registerrepository {
+
+	void save(Registration register);
+
+}

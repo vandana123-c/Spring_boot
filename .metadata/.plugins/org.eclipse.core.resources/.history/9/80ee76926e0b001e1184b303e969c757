@@ -1,0 +1,9 @@
+package com.example.demo.controlller;
+
+public class Greetingcontroller {
+	
+	public String greeting(map<String,object> model){
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.mycomapny;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.mycomapny.service.SpeakerServiceImpl;
+import com.mycomapny.service.SpreakerService;
+import com.mycompany.repository.HibernateSpeakerRepositoryImp;
+import com.mycompany.repository.SpeakerRepository;
+
+@Configuration
+public class appconfig {
+	
+	@Bean(name="SpeakerService")
+	public SpreakerService getspeakerservice() {
+		SpeakerServiceImpl service=new SpeakerServiceImpl();
+		service.getRep(getspeakerRepository());
+		return new service;
+	}
+	
+	@Bean(name="speakerrepository")
+	public SpeakerRepository getspeakerRepository() {
+		return new HibernateSpeakerRepositoryImp();
+	}
+
+}

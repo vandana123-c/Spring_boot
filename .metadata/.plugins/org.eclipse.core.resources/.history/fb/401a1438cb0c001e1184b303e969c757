@@ -1,0 +1,11 @@
+package com.mycomapny.model;
+
+public class Friend {
+	
+	@id
+	@generatedvalue(strategy=ge)
+	public int id;
+public String firstname;
+public String lastname;
+
+}

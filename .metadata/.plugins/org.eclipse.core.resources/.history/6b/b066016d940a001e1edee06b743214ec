@@ -1,0 +1,8 @@
+package com.mycompany.repository;
+
+public interface  SpeakerRepository {
+	
+	
+	public List<Speaker> findAll();
+
+}

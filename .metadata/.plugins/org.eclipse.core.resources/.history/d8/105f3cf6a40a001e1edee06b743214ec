@@ -1,0 +1,21 @@
+package com.mycomapny;
+import com.mycomapny.service.*;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.ApplicationContext;
+
+
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new AnnotationConfigApplicationContext(appconfig.class);
+		SpreakerService serv=context.getBean("SpeakerService1",SpreakerService.class);
+		
+		System.out.println(serv.findAll().get(0).firstname);
+			
+		
+
+	}
+
+}

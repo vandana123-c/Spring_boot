@@ -1,0 +1,9 @@
+package com.message.demo.controller;
+
+public class messagecontroller {
+	
+	public Message getmessage() {
+		|return new Message("Hello");
+	}
+
+}

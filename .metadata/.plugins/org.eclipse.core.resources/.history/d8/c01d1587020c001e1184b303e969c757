@@ -1,0 +1,24 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.example.demo.model.Registration;
+
+@Controller
+public class RegistrationController {
+	
+	@GetMapping("registration")
+	public String getregister(@ModelAttribute("registration") Registration registration) {
+		return "register";
+	}
+	
+	@PostMapping("registration")
+	public String addregister(@ModelAttribute("registration") Registration registration) {
+		return "register";
+	}
+
+
+}

@@ -1,0 +1,17 @@
+package com.mycompany.conference.repository;
+
+import javax.persistence.EntityManager;
+
+import com.mycompany.conference.model.Registration;
+
+public class RegistrationRepositoryImpl implements Registerrepository {
+	
+	private EntityManager entitymanager;
+	
+	@Override
+	public Registration save(Registration register) {
+		entitymanager.persist(register);
+		return register;
+	}
+
+}

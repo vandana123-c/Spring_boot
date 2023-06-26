@@ -1,0 +1,52 @@
+package com.mycompany.controller;
+
+import java.util.Iterator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.mycomapny.model.Friend;
+import com.mycompany.service.friendservice;
+
+public class friendcontroller {
+	@Autowired
+	friendservice service;
+		
+		@PostMapping("/friend")
+	public Friend create(@RequestBody Friend friend) {
+		return service.save(friend);
+	}
+	@GetMapping("/getfriend")
+		public Iterable<Friend> getfriend(){
+			return service.findAll();
+				
+		}
+		
+		@PutMapping("/friend")
+		public Friend updatefriend(@RequestBody Friend friend){
+		return service.save(friend);
+		}
+		
+		@DeleteMapping("/friend/{id}")
+		public void  deletefriend(@PathVariable int id)
+		{
+		 service.deleteById(null);
+		}
+		
+		@GetMapping("/friend/{id}")
+		public Friend getfriend(@PathVariable int id){
+		return service.findById(null).get();
+		}
+		
+		public Friend getfirstname(@RequestParam String firstname,@RequestParam sting lastname)
+		
+		
+
+	
+}

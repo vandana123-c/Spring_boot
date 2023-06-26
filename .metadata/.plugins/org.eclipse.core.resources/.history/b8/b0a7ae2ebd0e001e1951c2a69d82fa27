@@ -1,0 +1,13 @@
+package com.mycompany.conference.service;
+
+import com.mycompany.conference.model.Course;
+
+public class CourseServiceImpl implements CourseService {
+	
+	@Override
+	public Course save(Course course) {
+		
+		return course;
+	}
+
+}

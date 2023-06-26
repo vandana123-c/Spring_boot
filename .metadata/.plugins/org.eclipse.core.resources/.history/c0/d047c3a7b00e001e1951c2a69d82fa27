@@ -1,0 +1,14 @@
+package com.mycompany.conference.repository;
+
+import com.mycompany.conference.model.Course;
+
+@Repository
+public class courseRepositoryImpl implements CourseRepository {
+	
+	@Override
+	public Course save(Course course){
+		return course;
+		
+	}
+
+}

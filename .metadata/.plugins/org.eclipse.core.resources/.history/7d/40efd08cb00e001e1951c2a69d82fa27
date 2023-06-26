@@ -1,0 +1,10 @@
+package com.mycompany.conference.repository;
+
+public class courseRepositoryImpl implements CourseRepository {
+	
+	public Course save(Course course){
+		return COurse;
+		
+	}
+
+}
